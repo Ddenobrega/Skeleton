@@ -1,12 +1,10 @@
 import { Router } from "express";
 import { Request, Response } from "express";
 
-class Index<IHttp> {
+class Index {
 	router = Router();
 	constructor() {
-		this.router.get("/", (request: Request, response: Response) =>
-			this.index(request, response)
-		);
+		this.router.get("/", this.index);
 	}
 	index = (request: Request, response: Response) => {};
 }
