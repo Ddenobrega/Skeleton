@@ -1,10 +1,7 @@
-import Server from "./src/Server";
-import Env from "./src/Environment";
+class Main {
+  constructor() {
+    console.log("Starting Processes");
+  }
+}
 
-const environment = {
-	port: 3000,
-};
-
-const Port: number = new Env(environment).port;
-
-new Server(Port);
+const bot = new Main();
